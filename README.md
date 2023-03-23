@@ -110,7 +110,7 @@ It was decided to adopt the weights $\left[0.35, 0.18, 0.12\right]$ because of t
 
 Comparing the user and restaurant vectors triggered the calculation of the `score` value for each item, which contained values between $-1$ and $1$ and represented the cosine similarity of the vectors expressed by the formula:
 
-$$ \cos\theta = \frac{\texttt{user\_vector}\cdot \texttt{restaurant\_vector}}{|\texttt{user\_vector}|\cdot |\texttt{restaurant\_vector}|} $$
+$$ \cos\theta = \frac{\texttt{userVector}\cdot \texttt{restaurantVector}}{|\texttt{userVector}|\cdot |\texttt{restaurantVector}|} $$
 
 The last step performed by the system is to sort the restaurants in descending order of the final score obtained and display to the user the 10 locations with the highest similarity value.
 
